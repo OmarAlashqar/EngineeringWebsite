@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="eng-US">
+
+<head>
+  <title>Traffic Light</title>
+  <meta charset="UTF-8">
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <style>
+    img#diagram{
+      width:80%;
+      max-width:800px;
+      border-radius: 20px;
+      display:block;
+      margin:auto;
+    }
+    </style>
+
+</head>
+
+<!-- Main Content -->
+
+<body>
+
+  <ul id="nav">
+    <li><a href="home.html">Home</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a class="active" href="traffic.html">Traffic Light</a></li>
+    <li><a href="memory.html">Memory Lane</a></li>
+    <li><a href="about.html">About Me</a></li>
+  </ul>
+
+  <div class="header">
+    <h1>Traffic Light</h1>
+  </div>
+
+  <div class="mainHeading">
+    <h2> <strong>A Digital System</strong> </h2>
+  </div>
+
+  <!--Content-->
+
+  <div class="breakDown">
+
+    <div class="info" style="border-radius:20px 20px 0 0">
+      <p>
+        I'm going to use a Logic Circuit in order to create a functioning
+        traffic light with three inputs and outputs. The three outputs would
+        be Red, Yellow, and Green lights.
+        <br><br>
+        First off, I'll set the variables we're going to use:
+      </p>
+
+      <br><br>
+
+      <table>
+        <tr>
+          <th>Variable</th>
+          <th>Equivalent</th>
+        </tr>
+
+        <tr>
+          <td>A</td>
+          <td>Red light ON</td>
+        </tr>
+
+        <tr>
+          <td>A'</td>
+          <td>Red light OFF</td>
+        </tr>
+
+        <tr>
+          <td>B</td>
+          <td>Yellow light ON</td>
+        </tr>
+
+        <tr>
+          <td>B'</td>
+          <td>Yellow light OFF</td>
+        </tr>
+
+        <tr>
+          <td>C</td>
+          <td>Green light ON</td>
+        </tr>
+
+        <tr>
+          <td>C'</td>
+          <td>Green light OFF</td>
+        </tr>
+      </table>
+
+    </div>
+
+    <div class="media">
+
+    </div>
+
+    <div class="info">
+      <p>
+        Now that we have those set, I'll create a truth table.
+        Notice how the output is High only when one of the Variables
+        is High.
+      </p>
+
+      <br><br>
+
+      <table>
+        <tr>
+          <th>A</th>
+          <th>B</th>
+          <th>C</th>
+          <th>Output</th>
+        </tr>
+
+        <tr>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+
+        <tr>
+          <td>0</td>
+          <td>0</td>
+          <td>1</td>
+          <td>1</td>
+        </tr>
+
+        <tr>
+          <td>0</td>
+          <td>1</td>
+          <td>0</td>
+          <td>1</td>
+        </tr>
+
+        <tr>
+          <td>0</td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+        </tr>
+
+        <tr>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>1</td>
+        </tr>
+
+        <tr>
+          <td>1</td>
+          <td>0</td>
+          <td>1</td>
+          <td>0</td>
+        </tr>
+
+        <tr>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+
+        <tr>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+        </tr>
+
+      </table>
+    </div>
+
+    <div class="media">
+
+    </div>
+
+    <div class="info">
+      <p>
+        The following Boolean Equation was derived from the truth table.
+        <br><br>
+        (A' • B' • C) + (A' • B • C') + (A • B' • C') = Output
+        <br><br>
+        Since it can't be simplified, I will go ahead and create a diagram.
+      </p>
+    </div>
+
+    <div class="media">
+      <img id="diagram" src="img/diagram.jpg">
+    </div>
+
+    <div class="info">
+      <p>
+        The traffic light works based on the following:
+        <br><br>
+        • When input A is high, the Red light turns on.
+        <br>
+        • When input B is high, the Yellow light turns on.
+        <br>
+        • When input C is high, the Green light turns on.
+        <br>
+        • If multiple inputs are high, all the lights turn off.
+        <br>
+        • If all inputs are low, all the lights turn off.
+        <br><br>
+        Here's a video that simulates the traffic light using the Logic
+        Circuit that I created. Note that the top light represents Red,
+        the middle light represents Yellow, and the bottom light represents
+        Green.
+      </p>
+    </div>
+
+    <div class="media" style="border-radius:0 0 20px 20px">
+      <video src="vid/demo.webm" poster="img/cover.png" controls muted>
+    </div>
+
+  </div>
+  <br><br><br><br>
+
+
+<!-- Back to Top -->
+<a href="#top">
+  <img class="backTop" src="img/backTop.png">
+</a>
+
+<p class="footer">
+  ©2016 Omar Ashqar | All Rights Reserved
+</p>
+
+</body>
+
+</html>

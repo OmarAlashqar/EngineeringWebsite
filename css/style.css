@@ -1,0 +1,339 @@
+/* Fonts */
+@font-face {
+  font-family:ubuntu;
+  src:url(../fonts/ubuntu.ttf);
+}
+
+@font-face {
+  font-family:designer;
+  src:url(../fonts/designer.ttf);
+}
+
+@font-face {
+  font-family:arkship;
+  src:url(../fonts/arkship.ttf);
+}
+
+@font-face {
+  font-family:odin;
+  src:url(../fonts/odin.otf);
+}
+
+/* Main CSS */
+
+body{
+  padding:0;
+  margin:0;
+  background-image:url(../img/mesh.png);
+  background-size:120px;
+}
+
+a{
+    text-decoration:none;
+}
+
+p a{
+  color:#8C4646;
+}
+
+p a:hover{
+  color:#F2E394;
+}
+
+p a::after{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  content: "";
+  background: url(../img/link.png) no-repeat 0 0;
+  background-size: 100%;
+  margin-left: 5px;
+  margin-right: 4px;
+}
+
+p a:hover::after{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  content: "";
+  background: url(../img/linkDown.png) no-repeat 0 0;
+  background-size: 100%;
+  margin-left: 5px;
+  margin-right: 4px;
+}
+
+p{
+  font-size:1.5em;
+  color:#616161;
+  font-family:ubuntu;
+  margin:0;
+  padding:10px;
+}
+
+div.info#blogText p{
+  color:#d8d8d8;
+}
+
+p.footer{
+  font-family:odin;
+  font-size:1.3em;
+  color:#b76f6f;
+  margin:20px 0 10px 0;
+  text-align:center;
+}
+
+div.header{
+  background-image:url(../img/forest.jpg);
+  background-size:cover;
+  background-position: center;
+  min-height:150px;
+  box-shadow:  inset 0px -20px 50px -10px #888;
+}
+
+div.header h1{
+  font-family:arkship;
+  font-size: 4em;
+  color:#F2E394;
+  text-align:center;
+  position:relative;
+  top:35px;
+}
+
+div.mainHeading{
+  width:100%;
+  margin:50px 0 100px;
+}
+
+div.mainHeading h2{
+  font-family:odin;
+  font-size: 3em;
+  color:#F2E394;
+  text-align:center;
+  color: transparent;
+  background-image: url("../img/forest.jpg");
+  background-size: cover;
+  background-position: center;
+  -webkit-background-clip: text;
+}
+div.infoBox{
+  transition:0.5s;
+  padding:30px 25%;
+  background-size:400px;
+  height:50px;
+  text-align:center;
+}
+
+.infoBox h2{
+  transition:0.25s;
+  font-family:ubuntu;
+  font-size:2em;
+  color:#8C4646;
+  display:inline;
+  padding:17px;
+  border: 3px solid #f1f1f1;
+  border-radius: 100px;
+  position:relative;
+  top:6px;
+}
+
+div.infoBox#inter:hover{
+  height:80px;
+  box-shadow: inset 0px -20px 50px -10px #888;
+}
+
+div.infoBox:hover h2{
+  padding:25px;
+  border-color:#8C4646;
+}
+
+div.post{
+  display:flex;
+}
+
+div.breakDown{
+  width:80%;
+  margin:auto;
+}
+
+div.breakDown div.info{
+  background-color:#9dd0bf;
+  padding:20px;
+}
+
+div.breakDown div.media{
+  background-image:url(../img/tri.png);
+  padding:20px;
+}
+
+div#blogText{
+  width:50%;
+  float:left;
+  display:inline;
+  min-height:100px;
+}
+
+div#blogMedia{
+  background-image:url(../img/tri.png);
+  width:50%;
+  float:right;
+  display:inline;
+  min-height:100px;
+  box-shadow:  inset 50px 0px 50px -10px #1f1f1f;
+}
+
+div#blogText div{
+  padding:20px;
+  overflow: auto;
+}
+
+div#blogMedia div{
+  padding:20px;
+  overflow: auto;
+}
+
+div#blogText h1{
+  font-family:arkship;
+  font-size: 3.5em;
+  color:#588C7E;
+  text-align:left;
+}
+
+div#blogMedia div *{
+  display:block;
+  margin: auto;
+  border-radius:20px;
+}
+
+div#blogText *, div#blogMedia *{
+  margin:0;
+}
+
+div.breakDown div.infoBox{
+  border-radius: 100px;
+}
+
+iframe{
+  margin:50px auto;
+}
+/* GUI */
+
+button{
+  transition:0.25s;
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  border: 5px solid white;
+  border-radius: 20px;
+  background-color: transparent;
+  color: #fff;
+  font-family: ubuntu;
+}
+
+button:hover{
+
+  background-color: #588C7E;
+  border: 5px solid #588C7E;
+}
+
+/* Navigational Panel */
+
+ul#nav{
+  z-index:100;
+  margin:0px;
+  padding:0px;
+  display:inline;
+  position:fixed;
+  top:0;
+  width:100%;
+  list-style-type:none;
+  background-color:#8C4646;
+  overflow:hidden;
+}
+
+ul#nav li {
+	float:left;
+}
+
+ul#nav li a {
+  font-family:ubuntu;
+	display:inline-block;
+	color:#f1f1f1;
+	margin:0px;
+	padding:14px 16px;
+	text-align:center;
+	text-decoration:none;
+}
+
+ul#nav li a:hover {
+
+	color:#8C4646;
+	background-color:#e2e2e2;
+	text-decoration:none;
+}
+
+ul#nav li a.active {
+  color:#8C4646;
+	background-color:#F2E394;
+}
+
+/* Media */
+
+img.backTop{
+  transition:0.5s;
+  width:110px;
+  position:fixed;
+  bottom:0;
+  right:0;
+  margin:10px;
+}
+
+img.backTop:hover{
+  width:120px;
+}
+
+video{
+      width:80%;
+      max-width:900px;
+      border-radius: 20px;
+      display:block;
+      margin:auto;
+    }
+
+/* Tables */
+
+table{
+  width:80%;
+  margin:auto;
+  border-collapse:collapse;
+}
+
+th, td{
+  font-size:1.2em;
+  font-family:ubuntu;
+  text-align:center;
+  color:#616161;
+  padding:5px;
+}
+
+th{
+  background-color:#313131;
+  color:#d8d8d8;
+  border-radius: 20px 20px 0 0
+}
+
+tr:nth-child(even){
+  background-color:#e2e2e2;
+}
+
+tr:nth-child(odd){
+  background-color:#cecece;
+}
+
+tr:last-child{
+  border-radius: 0 0 20px 20px;
+}
