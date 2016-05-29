@@ -1,2 +1,5 @@
-# EngineeringWebsite
-A personal website I worked on for a computer engineering assignment
+
+Check out the website at
+# www.omarash.github.io/EngineeringWebsite #
+<hr>
+Or check out the source code under the "gh-pages" branch
