@@ -260,6 +260,7 @@ ul#nav li {
 }
 
 ul#nav li a {
+  transition:0.25s;
   font-family:ubuntu;
 	display:inline-block;
 	color:#f1f1f1;
@@ -270,7 +271,7 @@ ul#nav li a {
 }
 
 ul#nav li a:hover {
-
+  transition:0.25s;
 	color:#8C4646;
 	background-color:#e2e2e2;
 	text-decoration:none;
